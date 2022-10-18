@@ -13,6 +13,15 @@ module.exports = {
         drimmer: ["Drimmer", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translate(0, 0)" },
+          "100%": { transform: "translate(-100%, 0)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 25s infinite linear",
+      },
     },
   },
   plugins: [],
