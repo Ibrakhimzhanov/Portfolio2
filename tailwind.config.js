@@ -7,10 +7,12 @@ module.exports = {
         main: {
           DEFAULT: "#08182E",
           primary: "#53D3B9",
+          secondary: "#C0E9FF",
         },
       },
       fontFamily: {
-        drimmer: ["Drimmer", "sans-serif"],
+        drimmer: ["Drimmer-Bold", "sans-serif"],
+        drimmerE: ["Drimmer-ExtraBold", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
       keyframes: {
@@ -21,6 +23,9 @@ module.exports = {
       },
       animation: {
         scroll: "scroll 5s infinite linear",
+      },
+      container: {
+        center: true,
       },
     },
   },
