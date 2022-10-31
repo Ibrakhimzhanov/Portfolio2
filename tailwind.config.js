@@ -14,6 +14,7 @@ module.exports = {
         drimmer: ["Drimmer-Bold", "sans-serif"],
         drimmerE: ["Drimmer-ExtraBold", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        oswaldM: ["Oswald Medium", "sans-serif"],
       },
       keyframes: {
         scroll: {

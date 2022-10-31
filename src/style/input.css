@@ -19,3 +19,7 @@
     font-family: "Inter";
     src: url('/fonts/Inter-Regular.ttf')
 }
+@font-face {
+    font-family: "Oswald Medium";
+    src: url('/fonts/Oswald-Medium.ttf')
+}
