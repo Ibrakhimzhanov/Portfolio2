@@ -30,17 +30,28 @@ gsap.to(sections, {
 
 let items = gsap.utils.toArray(".item");
 
-let containerWork = document.querySelector(".containerWork");
-
-gsap.to(containerWork, {
-  xPercent: -100,
+gsap.to(items, {
+  x: () =>
+    -(container.scrollWidth - document.documentElement.clientWidth) + "px",
   ease: "none",
   scrollTrigger: {
-    trigger: containerWork,
+    trigger: ".containerW",
     pin: true,
     scrub: 1,
-    // snap: 1,
-    // end: "+=3500",
-    end: () => "+=" + containerWork.offsetWidth,
+    snap: 1 / (items.length - 1),
+    end: () => "+=" + document.querySelector(".containerW").offsetWidth,
   },
 });
+
+// gsap.to(items, {
+//   xPercent: -100 * (items.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: containerWork,
+//     pin: true,
+//     scrub: 1,
+//     snap: 1 / (items.length - 1),
+//     end: "+=3500",
+//     // end: () => "+=" + containerWork.offsetWidth,
+//   },
+// });
